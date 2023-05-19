@@ -1,0 +1,27 @@
+
+
+/* page_up */
+
+
+.up_btn{
+  position: fixed;
+  z-index: 99;
+  bottom: 5%;
+  right: 5%;
+  display: none;
+  width: 44px;
+  height: 44px;
+}  
+
+/* iphone */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+
+}}
+
+
+
+#go-back{
+  background-color: rgba(0, 0, 0, 0);
+}
+
