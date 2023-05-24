@@ -1,0 +1,145 @@
+main{
+    display: flex;
+}
+.left_search{
+    width: 300px;
+    margin: 50px 0 0 2%;
+}
+.left_search_box{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+.left_search_name{
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.left_search_name li{
+    margin:3px  5px;
+   }
+.left_search_name li:last-child{
+    border-bottom: 1px solid #252525;
+    padding-bottom: 15px;
+}
+.left_search_name li a{
+    display: block;
+    transition: all .3s;
+    padding: 3px;
+}
+.left_search_name li a:hover{
+    background-color: rgba(0, 0, 0, .5);
+    color: #fefefe;
+}
+#artists_list_area{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    width: 70%;
+}
+
+.artists_list{
+    width:250px;
+    height: 250px;
+    position: relative;
+    margin: 20px;
+}
+
+#left_search{
+    font-size: 1.1em;
+    padding-bottom: 5px;
+}
+#left_search:focus{
+    border-bottom: 1px solid #ddd;
+}
+
+.left_search_btn{ 
+    background-color: rgba(0, 0, 0, 0);
+    width: 25px;
+}
+
+.artists_list a{
+    display: block;
+}
+.artists_list_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.artists_list_text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fefefe;
+    height: 250px;
+    text-align: center;
+    opacity: 0;
+    transition: all .3s;
+}
+.artists_list_text h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.artists_list_text span{
+    display: block;
+    padding-top: 7px;
+}
+
+.artists_list:hover > .artists_list_text{
+    opacity: 1;
+}
+.m_artists_list_text{
+    display: none;
+}
+@media (max-width:787px){
+    main{
+        flex-wrap: wrap;
+    }
+    .left_search{
+        width: 100%;
+        margin: 30px auto;
+    }
+    .left_search_box{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5%;
+    }
+    .left_search_name{
+        display: none;
+    }
+    #artists_list_area{
+        margin-left:0;
+        width: 100%;
+    }
+    
+    .artists_list{
+        width:90%;
+        height: auto;
+        position: unset;
+        margin: 10px 5%;
+    }
+    
+    #left_search{
+        width: 85%;
+    }
+
+    .artists_list_img{
+        position: unset;
+    }
+    
+    .artists_list_text{
+        display: none !important;
+    }
+    .m_artists_list_text{
+        display: block;
+        font-size: 1.2em;
+        padding-top: 10px;
+    }
+
+}
