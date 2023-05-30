@@ -1,6 +1,7 @@
-main{
+.artists_main, .artists_detail{
     display: flex;
 }
+
 .left_search{
     width: 300px;
     margin: 50px 0 0 2%;
@@ -98,7 +99,7 @@ main{
     display: none;
 }
 @media (max-width:787px){
-    main{
+    .artists_main{
         flex-wrap: wrap;
     }
     .left_search{
@@ -141,5 +142,146 @@ main{
         font-size: 1.2em;
         padding-top: 10px;
     }
+}
 
+
+/* artists_detail */
+
+
+
+.artists_banner{
+    width: 100%;
+    height: 550px;
+    background: url(../images/artists_banner1.jpg)no-repeat center top fixed;
+}
+.artist_subtitle{
+    margin: 100px 0 50px 0;
+}
+.artists_detail{
+    justify-content: center;
+}
+.artists_info_en, .artists_info_ko{
+    width: 40%;
+    margin: 0 3%;
+}
+
+.artist_info_name{
+    margin-top: 100px;
+    padding-bottom: 30px;
+}
+.artist_info_text{
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+.art_representative{
+    width: 35% !important;
+    margin: 100px auto;
+    height: 350px;
+}
+.art_representative_nav{
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.art_representative_list{
+    width: 13%;
+    margin:10px;
+}
+
+
+.artists_goods_box_list{
+    width: 18%;
+    margin: 0 10px;
+}
+.artists_goods_box_list .square_box img:hover{
+    transform: scale(1.2, 1.2);
+}
+.artists_goods_box_list .square_box img{
+    transition: all .3s;
+}
+.artists_goods_box_list .square_box{
+    overflow: hidden;
+}
+
+.square_box_text{
+    text-align: center;
+}
+.buyNow_btn{
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+    font-weight: 600;
+    border: 1px solid #252525;
+    padding: 5px 0;
+    transition: all .3s;
+}
+.buyNow_btn:hover{
+    color: #fefefe;
+    background-color: #252525;
+}
+
+
+/* artists_exhibition_list */
+
+.artists_exhibition_list{
+    width: 18%;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.artists_exhibition_text span{
+    display: block;
+}
+
+@media (max-width:787px){
+
+.artist_subtitle{
+    margin: 60px 0 30px 0;
+}
+.artists_detail{
+    flex-wrap: wrap;
+}
+.artists_info_en, .artists_info_ko{
+    width: 100%;
+}
+
+.artist_info_name{
+    margin-top: 60px;
+}
+.art_representative{
+    width: 100% !important;
+    margin: 60px auto;
+}
+.art_representative_nav{
+    width: 100%;
+    margin: 0 auto;;
+    justify-content: start;
+}
+
+.art_representative_list{
+    width: 17%;
+    margin:5px 3px;
+}
+
+.artists_goods_box_area{
+    flex-wrap: wrap;
+}
+.artists_goods_box_list{
+    width: calc(50% - 20px);
+    margin: 5px 10px 0;
+}
+
+/* artists_exhibition_list */
+
+.artists_exhibition_list{
+    width: calc(50% - 20px);
+    margin: 5px 10px 0;
+}
+
+.artists_exhibition_text span{
+    display: block;
+}
 }

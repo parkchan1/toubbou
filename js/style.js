@@ -99,3 +99,16 @@ $(function(){
         $(this).find(".mobile-btn-1").toggleClass("up")
     });
 });
+
+
+// img_change
+
+var MainArt = document.querySelector('#main_art');
+var ImgList = document.querySelectorAll('.art_imgs');
+var Open = false;
+
+for(var i =0; i<ImgList.length; i++){
+    ImgList[i].addEventListener('mouseenter', function(){
+        MainArt.setAttribute('src', this.src);
+    })
+}
