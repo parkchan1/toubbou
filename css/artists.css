@@ -1,4 +1,4 @@
-.artists_main, .artists_detail{
+ .artists_detail{
     display: flex;
 }
 
@@ -32,11 +32,17 @@
     background-color: rgba(0, 0, 0, .5);
     color: #fefefe;
 }
-#artists_list_area{
-    display: flex;
-    flex-wrap: wrap;
+#artists_box{
     margin-left: 5%;
     width: 70%;
+}
+.artists_box_title{
+    margin-top: 50px;
+}
+
+#artists_list_area{
+    flex-wrap: wrap;
+
 }
 
 .artists_list{
@@ -114,11 +120,13 @@
     .left_search_name{
         display: none;
     }
-    #artists_list_area{
+    #artists_box{
         margin-left:0;
         width: 100%;
     }
-    
+    .artists_box_title{
+        display: none;
+    }
     .artists_list{
         width:90%;
         height: auto;

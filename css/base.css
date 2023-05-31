@@ -52,10 +52,10 @@ text-align: center;
 .m-sub-nav{ display: none;}
 .m-sub-nav li a{display:block; padding-left: 30px;  font-size: .8em; margin: 5px 0 ;}
 
-.sidebar_menu{display: none; width: 85%; height: 100vh; background: #fff; position: fixed; top:0; left: -80%; z-index: 999;}
+.sidebar_menu{display: none; width: 85%; height: 100vh; background: #fff; position: fixed; top:0; right: -80%; z-index: 999;}
 
-.m-title{ text-align: center; border-bottom: 1px solid #92278F; height: 70px;padding: 20px 0;}
-.m-title img{ display: inline-block;height: 100%; }
+.m-title{ text-align: center; border-bottom: 1px solid #252525; height: 70px;padding: 20px 0;}
+.m-title img{ display: inline-block; width: 55%; margin:15px auto; }
 .close_btn{width: 25px;height: 25px; position: absolute; top: 30px; right: 20px;}
 
 .m-sign-bar{ margin-top: 20px; display: flex; justify-content: space-around;}
@@ -75,7 +75,7 @@ text-align: center;
 .m-menu_btn img, .close_btn img{ width: 100%;}
 .mobile-btn-1{ float: right;}
 .mobile-btn-1::before{ content: "";display: inline-block; border-bottom: 2px solid #151515; border-right: 2px solid #151515; width: 10px;height: 10px; transform: rotate(45deg); transition: all .5s; }
-.up::before{ transform: rotate(225deg); border-bottom: 2px solid #92278F; border-right: 2px solid #92278F;}
+.up::before{ transform: rotate(225deg); border-bottom: 2px solid #ddd; border-right: 2px solid #ddd;}
 
 .m-info-wrap{display: flex;justify-content: space-around ; border: 1px solid #ddd;}
 .m-info-wrap li{ width: 25%; text-align: center; border-right: 1px solid #ddd;}
@@ -115,7 +115,7 @@ footer a{  font-size: 1em; color: #efefef;}
 .f-bottom{ text-align: center;  padding-bottom: 1%;}
 
 @media (max-width:787px){
-  footer{ width: 100%;  margin-top: 10%;   font-size: .8em; line-height: 1.5em; font-weight: 300; border-top: 1px solid #92278F;}
+  footer{ width: 100%;  margin-top: 10%;   font-size: .8em; line-height: 1.5em; font-weight: 300; border-top: 1px solid #252525;}
   footer a{  font-size: 1em;}
   .footer-inner{display: flex; padding: 2% 0 5%; flex-wrap:wrap-reverse;} 
   .f-csinfo, .f-notice{ width: 48%; margin:  1% 1% 2% 1%;}

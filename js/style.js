@@ -69,7 +69,7 @@ $(document).ready(function(){
   $('.m-menu_btn').on('click', function(){
       $('.m-menu_bg').show();
       $('.sidebar_menu').show().animate({
-          left:0
+          right:0
       });  
       $('html, body').addClass('hidden');
   });
@@ -77,7 +77,7 @@ $(document).ready(function(){
   $('.close_btn').on('click', function(){
       $('.m-menu_bg').hide(); 
       $('.sidebar_menu').animate({
-          left: '-' + 80 + '%'
+        right: '-' + 80 + '%'
                   },function(){
                       $('.sidebar_menu').hide();          
                   });

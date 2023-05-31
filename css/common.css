@@ -33,3 +33,13 @@
 .square_box{ position: relative; width: 100%; background-color: #FFF; overflow: hidden;}
 .square_box::after{ display: block; content: ""; padding-bottom: 100%;}
 .square_box img{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+
+.tab_menu .current{
+  color: #fefefe;
+}
+.tab_contents{
+  display: none;
+}
+.tab_contents.current{
+  display: inherit;
+}
