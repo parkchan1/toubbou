@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice</title>
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/community.css">
+    <link rel="stylesheet" href="../css/slide_reset.css">
+</head>
+<body>
+
+  <section class="swiper-container inquiry_slide_main">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"><div class="swiper-slide-container">
+              
+              <div class="bg1">
+                  <img src="../images/gallery.jpg" alt="">
+              </div>
+          </div></div>
+          <div class="swiper-slide"><div class="swiper-slide-container">
+              <div class="bg1">
+                  <img src="../images/gallery2.jpg" alt="">
+              </div>
+          </div></div>
+      </div>
+  </section>
+
+  <div class="wrap_thumb_layout">
+    <div class="swiper-container inquiry_slide_sub">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="swiper-slide-container">
+                <div class="sc_slide_text">
+                    <h2>Artists</h2>
+                    <p>
+                      새롬게 떠오르는 신인 아티스트들과 <br>
+                      기존 아름다움을 추구하는 아티스트들의 <br>
+                      환상적인 협업공간을 소개시켜드리겠습니다.
+                    </p>
+        
+                    <button class="sc_slide_btn">View More</button>
+                </div>
+            </div></div>
+            <div class="swiper-slide"><div class="swiper-slide-container">
+                <div class="sc_slide_text">
+                    <h2>Art Goods</h2>
+                    <p>
+                      아티스틀의 다양한 작품들이 <br>
+                      나만의공간에서 나만의 스타일로 <br>
+                      재탄생하여 나만의 전시회를 열어봐요.
+                    </p> 
+                    <button class="sc_slide_btn">View More</button>
+                </div>
+            </div></div>
+        </div>
+    </div>
+
+</div>
+
+<article id="inquiry_main">
+  <form action="post">
+    <h2 class="inquiry_main_title">
+      Inquiry
+    </h2>
+    <ul>
+      <li class="flex">
+        <label for="name">Name</label> <input type="text" id="name" placeholder="이름을 입력해주세요.">
+      </li>
+      <li class="flex">
+        <label for="email">E-mail</label> <input type="email" id="email" placeholder="이메일을 입력해주세요.">
+      </li>
+      <li class="flex">
+        <label for="textarea">Details inquiry</label> <textarea name="textarea" id="textarea" cols="30" rows="7"></textarea>
+      </li>
+    </ul>
+    <button type="submit" class="inquiry_btn">I'm going to knock</button>
+  </form>
+</article>
+</body>
+</html>
+
+
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/style.js"></script>
+<script src="../js/common.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+<script>
+	var swiperInMain = $('.inquiry_slide_main').find('.swiper-slide');
+	var swiperInSub = $('.inquiry_slide_sub').find('.inquiry_slide_sub');
+
+	var galleryTop = new Swiper('.inquiry_slide_main', {
+    	spaceBetween: 10,	//슬라이드 간격
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+		loop: true,	//슬라이드 반복
+    effect: 'fade',
+    speed: 1500,
+    fadeEffect: { 
+    crossFade: true 
+    },
+    });
+
+
+    var galleryThumbs = new Swiper('.inquiry_slide_sub', {
+    	spaceBetween: 0,	//슬라이드 간격
+    	centeredSlides: true,	//슬라이드 중앙 배치
+    	slidesPerView: 'auto',	//한번에 보여지는 슬라이드 개수(auto 가능)
+    	touchRatio: 0.2,	//드래그 비율 설정(기본값: 1, 기본값을 0으로 설정할 경우 드래그 불가능)
+    	slideToClickedSlide: true,	//슬라이드가 여러개 나열되어 있을 경우, 클릭 시 해당 슬라이드 위치로 이동
+		loop: true,	//슬라이드 반복
+    });
+
+	//Main Swiper와 Thumbnail Swiper가 연동제어 서로를 제어
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
+</script>
