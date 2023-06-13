@@ -41,6 +41,9 @@
     -webkit-align-items: center;
     align-items: center;
 }
+.sc_slide_text h2{
+    margin-bottom: 30px;
+}
 .inquiry_slide_main {
     position: relative;
 	height: 90vh;
