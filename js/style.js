@@ -21,14 +21,14 @@
 // .then(res => res.text())
 // .then(data => header.innerHTML = data);
 
-function modalOpen()
-{
-    $('#search_modal').show();
-};
-function modalClose()
-{
-    $('#search_modal').hide();
-};
+// function modalOpen()
+// {
+//     $('#search_modal').show();
+// };
+// function modalClose()
+// {
+//     $('#search_modal').hide();
+// };
 
 
  $(function(){
@@ -112,3 +112,17 @@ for(var i =0; i<ImgList.length; i++){
         MainArt.setAttribute('src', this.src);
     })
 }
+
+
+// slidetoggle
+$(function(){
+    $(".faq_question").off('click').click(function(){
+        $(this).siblings(".faq_ask").slideToggle()
+    });
+
+    $(".faq_question").on('click',function(){
+        $(this).parent(".faq_list").toggleClass("faq_on")
+        $(this).children(".mobile-btn-1").toggleClass("up")
+    });
+
+});
