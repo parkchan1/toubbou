@@ -78,9 +78,9 @@ text-align: center;
 .up::before{ transform: rotate(225deg); border-bottom: 2px solid #ddd; border-right: 2px solid #ddd;}
 
 .m-info-wrap{display: flex;justify-content: space-around ; border: 1px solid #ddd;}
-.m-info-wrap li{ width: 25%; text-align: center; border-right: 1px solid #ddd;}
+.m-info-wrap li{ width: 33.33%; text-align: center; border-right: 1px solid #ddd;}
 .m-info-wrap li:last-child{border-right: none;}
-.m-info-wrap li img{width: 80%; margin: auto; padding-bottom: 5px;}
+.m-info-wrap li img{width: 35%; margin: auto; padding-bottom: 5px;}
 .m-info-wrap li p{ font-size: .8em;}
 @media (max-width:787px){
   .pc-nav-wrap{ display: none;}

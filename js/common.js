@@ -15,34 +15,36 @@ const showSearch = () => {
   
           <ul class="search_nav">
               <li>
+                  <P>About</p>
                   <a href="https://parkchan1.github.io/toubbou/project/about.html">About</a>
                   <a href="https://parkchan1.github.io/toubbou/project/artists_list.html">Artists</a>
               </li>
               <li>
-                  <a href="#">Event</a>
-                  <a href="#">진행중인 이벤트</a>
-                  <a href="#">진행예정 이벤트</a>
+                  <P>Event</p>
+                  <a href="https://parkchan1.github.io/toubbou/project/event.html">진행중인 이벤트</a>
+                  <a href="https://parkchan1.github.io/toubbou/project/event.html#end_event">종료된 이벤트</a>
+                  <a href="https://parkchan1.github.io/toubbou/project/event.html#notice">Notice</a>
               </li>
               <li>
+                  <P>Shop</p>
                   <a href="#">Art Shop</a>
               </li>
               <li>
-                  <a href="#">Exhibition</a>
-                  <a href="#">전시중</a>
-                  <a href="#">전시예정</a>
+                  <p>Exhibition</p>
+                  <a href="https://parkchan1.github.io/toubbou/project/exhibition.html">전시중</a>
+                  <a href="https://parkchan1.github.io/toubbou/project/exhibition.html">전시예정</a>
               </li>
               <li>
-                  <a href="#">Community</a>
-                  <a href="#">Notice</a>
-                  <a href="#">FAQ</a>
+                  <p>Community</p>
+                  <a href="https://parkchan1.github.io/toubbou/community/inquiry.html">Inquiry</a>
+                  <a href="https://parkchan1.github.io/toubbou/community/faq.html">FAQ</a>
               </li>
+
               <li>
-                  <a href="#">Cart</a>
-              </li>
-              <li>
-                  <a href="#">Mypage</a>
+                  <p>Mypage</p>
                   <a href="https://parkchan1.github.io/toubbou/mypage/login.html">Login</a>
                   <a href="https://parkchan1.github.io/toubbou/mypage/join.html">Join</a>
+                  <a href="#">Cart</a>
               </li>
   
           </ul>
