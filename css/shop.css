@@ -92,7 +92,7 @@
 }
 
 
-/* artists_detail */
+/* shop slide */
 
 .swiper {
     width:100%;
@@ -130,7 +130,7 @@
     margin-right: 15px;
     padding: 30px 0;
   }
-.square_box_text{
+  .square_box_text{
     width: 75%;
     margin: 0 auto;
     padding: 10px 0;
@@ -145,10 +145,55 @@
     padding: 7px;
     font-weight: 500;
 }
+
+  @media (max-width:787px){
+      .swiper-slide {
+        width:45%;
+      }
+    
+      .swiper-slide .square_box{
+        width: 90%;
+      }
+      .best_goods{
+        margin:10px auto;
+      }
+      .slide_nav_box{
+        margin-right: 10px;
+        padding: 15px 0;
+      }
+      .square_box_text{
+        width: 90%;
+        font-size: 1em;
+    }
+    .square_box_text p{
+        font-size: .9em;
+    }
+    .best_sticker{
+        padding: 5px;
+        font-size: .8em;
+    }
+  }
+
+
 .products_list{
     flex-wrap: wrap;
 }
 .products_box{
     width: 23%;
     margin: 30px 1%;
+}
+
+@media (max-width:787px){
+    .products_area{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .products_list{
+        flex-wrap: wrap;
+    }
+    .products_box{
+        width: 48%;
+        margin: 30px 1%;
+    }
+    
 }
