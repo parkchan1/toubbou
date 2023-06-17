@@ -27,7 +27,7 @@ const showSearch = () => {
               </li>
               <li>
                   <P>Shop</p>
-                  <a href="#">Art Shop</a>
+                  <a href="https://parkchan1.github.io/toubbou/project/artshop.html">Art Shop</a>
               </li>
               <li>
                   <p>Exhibition</p>
