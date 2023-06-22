@@ -19,22 +19,21 @@
   .event_slide_area{
     margin: 15px auto;
     width: 95%;
-    height: 280px;
+    height: 300px;
     padding-top: 25px;
   }
   .event_silde_img{
     overflow: hidden;
-    height: 210px;
+    height: 220px;
     border-radius: 30px;
+    object-fit: cover;
   }
 
-  .event_subtitle{
-    background-color: #fefefe;
-    position: absolute;
-    top: -13px;
-    left: -20px;
-    padding-bottom: 45px;
-    padding-right: 45px;    
+
+.swiper-box p{
+    padding-top: 15px;
+    font-size: 1.1em;
+    font-weight: 500;
 }
     /* slide */
   @media (max-width:787px){
@@ -45,7 +44,7 @@
       .event_slide_area{
         margin: 15px auto;
         width: 95%;
-        height: 180px;
+        height: 210px;
         padding-top: 0px;
       }
       .event_silde_img{
@@ -53,13 +52,11 @@
         height: 130px;
         border-radius: 30px;
       }
-      .event_subtitle{
-        background-color: #fefefe;
-        position: absolute;
-        top: -13px;
-        left: 0px;
-        padding-bottom: 25px;
-        padding-right: 25px;    
+      .swiper-box p{
+        font-size: 1em;
+        width: 80%;
+        margin: 0 auto;
+
     }
 }
 
@@ -70,25 +67,16 @@
     border-radius: 50px;
     position: relative;
   }
-
+.event_title_top {
+    justify-content: space-between;
+    margin: 0 30px;
+    padding-top: 30px;
+    align-items: center;
+}
 .slide_nav_box{
-    justify-content: end;
-    padding: 30px 40px 0 0;
     cursor: pointer;
 }
-.prev_button, .next_button{
-    opacity: .5;
-    transition: all .3s;
-}
-.next_button:hover, .prev_button:hover{
-    opacity: 1;
-} 
-.next_button::before{
-    content: "";display: inline-block; border-bottom: 2px solid #252525; border-right: 2px solid #252525; width: 10px;height: 10px; transform: rotate(315deg);
-}
-.prev_button::after{
-    content: "";display: inline-block; border-bottom: 2px solid #252525; border-right: 2px solid #252525; width: 10px;height: 10px; transform: rotate(135deg);
-}
+
 
 /* event_community */
 
@@ -170,7 +158,7 @@
         width: 100%;
     }
     #notice_box{
-        width: 100%%;
+        width: 100%;
         table-layout: fixed;
     }
     .notice_list td{
