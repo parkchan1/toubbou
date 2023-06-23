@@ -4,7 +4,6 @@ main{
 }
 
 #name_about{
-    margin-top: 150px;
     background: url(../images/about.png) no-repeat right bottom;
     background-color: #252525;
     width: 100%;
@@ -37,7 +36,6 @@ main{
 @media (max-width:767px){
 
     #name_about{
-        margin-top: 150px;
         background: url(../images/about.png) no-repeat right bottom;
         background-color: #252525;
         height: 85vh;

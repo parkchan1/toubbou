@@ -93,6 +93,13 @@ text-align: center;
   .header_tool{ display: none;}
 }
 
+
+.header_top{
+  margin-top: 75px;
+}
+
+
+
 /* header-end */
 
 .top_up{position: fixed; bottom: 100px; right: 100px; width: 50px; height: 50px; display: none; opacity: .6;   transition: all .4s; border-radius:100px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);}
