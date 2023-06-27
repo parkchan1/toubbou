@@ -4,52 +4,208 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Join</title>
 
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-<main class="inner">
-<section id="personal_information">
-    <h3>기본정보</h3>
-    <form action="">
-        <ul>
+
+     <!-- header -->
+     <header>
+                    
+        <h1 class="logo">
+            <a href="https://parkchan1.github.io/toubbou/"><img src="https://parkchan1.github.io/toubbou/icon/logo.svg" alt="logo"></a>
+        </h1>
+
+        <div class="m-nav-wrap">
+            <div class="m-menu_btn">
+                <img src="https://parkchan1.github.io/toubbou/icon/m_menu.png" alt="메뉴">
+            </div>
+            
+            <div class="m-menu_bg"></div>
+            
+            <div class="sidebar_menu">
+                <h2 class="m-title">
+                    <a href="https://parkchan1.github.io/toubbou/">
+                        <img src="https://parkchan1.github.io/toubbou/icon/logo.svg" alt="모바일로고">
+                    </a>    
+                </h2>
+                <div class="close_btn">
+                    <img src="https://parkchan1.github.io/toubbou/icon/m_close.png" alt="닫기">
+                </div>
+                <p class='user-hello'>안녕하세요. </p>
+                <div class="m-log-box">
+                    <a href="https://parkchan1.github.io/toubbou/mypage/login.html" class="login-btn"> 로그인</a>    
+                    <a href="https://parkchan1.github.io/toubbou/mypage/join.html" class="join-btn"> 회원가입</a>
+                </div>
+                <ul class="menu_wrap">
+                    <li class="m-sub-btn">
+                        <a href="#">About 
+                            <span class="mobile-btn-1"></span>
+                        </a>
+                        <ul class="m-sub-nav">
+                            <li><a href="https://parkchan1.github.io/toubbou/project/about.html">About</a></li>
+                            <li><a href="https://parkchan1.github.io/toubbou/project/artists_list.html">Artists</a></li>
+                        </ul> 
+                    </li>
+                    <li class="m-sub-btn">
+                        <a href="#">Event 
+                            <span class="mobile-btn-1"></span>
+                        </a>
+                        <ul class="m-sub-nav">
+                            <li><a href="https://parkchan1.github.io/toubbou/project/event.html">진행중인 이벤트</a></li>
+                            <li><a href="https://parkchan1.github.io/toubbou/project/event.html#end_event">종료된 이벤트</a></li>
+                            <li><a href="https://parkchan1.github.io/toubbou/project/event.html#notice_box">Notice</a></li>
+                        </ul> 
+                    </li>
+                    <li class="m-sub-btn">
+                        <a href="#">Store
+                            <span class="mobile-btn-1"></span>
+                        </a>
+                        <ul class="m-sub-nav">
+                            <li><a href="https://parkchan1.github.io/toubbou/project/artshop.html">Art Store</a></li>
+                        </ul> 
+                    </li>
+                    <li class="m-sub-btn">
+                        <a href="#">Exhibition 
+                            <span class="mobile-btn-1"></span>
+                        </a>
+                        <ul class="m-sub-nav">
+                            <li><a href="https://parkchan1.github.io/toubbou/project/exhibition.html">진행중인 전시</a></li>
+                            <li><a href="https://parkchan1.github.io/toubbou/project/exhibition.html">전시 예정</a></li>
+                        </ul> 
+                    </li>
+                    <li class="m-sub-btn">
+                        <a href="#">Community <span class="mobile-btn-1"></span></a>
+                        <ul class="m-sub-nav">
+                            <li><a href="https://parkchan1.github.io/toubbou/community/inquiry.html">Inquiry</a></li>
+                            <li><a href="https://parkchan1.github.io/toubbou/community/faq.html">FAQ</a></li>
+
+                        </ul> 
+                    </li>
+                </ul>
+        
+                <ul class="m-info-wrap">
+                    <li><a href="javacsript:void(0);" onclick="showSearch();">
+                        <img src="https://parkchan1.github.io/toubbou/icon/search.svg" alt="주문조회">
+                        <p>검색</p>
+                    </a></li>
+                    <li><a href="sub/mypage/cart.html">
+                        <img src="https://parkchan1.github.io/toubbou/icon/cart.svg" alt="장바구니">
+                        <p>장바구니</p>
+                    </a></li>
+                    <li><a href="sub/mypage/mypage.html">
+                        <img src="https://parkchan1.github.io/toubbou/icon/mypage.svg" alt="마이페이지">
+                        <p>마이페이지</p>
+                    </a></li>
+                </ul>
+        
+            </div>
+        </div><!--mobile-nav-->
+        <nav class="pc-nav-wrap">
+            <ul class="pc_nav">
+                <li><a >About</a>
+                    <ul class="pc_nav_sub">
+                        <li><a href="https://parkchan1.github.io/toubbou/project/about.html">About</a></li>
+                        <li><a href="https://parkchan1.github.io/toubbou/project/artists_list.html">Artists</a></li>
+                    </ul>
+                </li>
+
+                <li><a>Event</a>
+                    <ul class="pc_nav_sub">
+                        <li><a href="https://parkchan1.github.io/toubbou/project/event.html">진행중인 이벤트</a></li>
+                        <li><a href="https://parkchan1.github.io/toubbou/project/event.html#end_event">종료된 이벤트</a></li>
+                        <li><a href="https://parkchan1.github.io/toubbou/project/event.html#notice_box">Notice</a></li>
+                    </ul>
+                </li>
+                <li><a>Store</a>
+                    <ul class="pc_nav_sub">
+                        <li><a href="https://parkchan1.github.io/toubbou/project/artshop.html"> Art Store</a></li>
+                    </ul>
+                </li>
+                <li><a>Exhibition</a>
+                    <ul class="pc_nav_sub">
+                        <li><a href="https://parkchan1.github.io/toubbou/project/exhibition.html">전시중</a></li>
+                        <li><a href="https://parkchan1.github.io/toubbou/project/exhibition.html">전시예정</a></li>
+                    </ul>
+                </li>
+                <li><a>Community</a>
+                    <ul class="pc_nav_sub">
+                        <li><a href="https://parkchan1.github.io/toubbou/community/inquiry.html">Inquiry</a></li>
+                        <li><a href="https://parkchan1.github.io/toubbou/community/faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <ul class="header_tool">
             <li>
+                <a id="search" href="javacsript:void(0);" onclick="showSearch();"><img src="https://parkchan1.github.io/toubbou/icon/search.svg" alt="검색"></a>
+            </li>
+            <li>
+                <a href="/"><img src="https://parkchan1.github.io/toubbou/icon/cart.svg" alt="장바구니"></a>
+            </li>
+            <li>
+                <a href="/"><img src="https://parkchan1.github.io/toubbou/icon/mypage.svg" alt="마이페이지"></a>
+                    <ul class="pc_nav_sub">
+                        <li><a href="/">마이페이지</a></li>
+                        <li><a href="https://parkchan1.github.io/toubbou/mypage/login.html">로그인</a></li>
+                    </ul>
+            </li>
+        </ul>
+
+
+    </header>
+
+
+<main class="inner header_top">
+<section id="personal_information">
+    <h3 class="join_sub_title">기본정보</h3>
+    <form action="" class="join_info">
+        <ul class="join_box">
+            <li class="join_list">
                 <label for="id">
                     아이디
                 </label>
                 <input type="text" id="id" placeholder="아이디를 입력해주세요.">
             </li>
-            <li>
-                <label for="password">
-                    비밀번호
-                </label>
-                <input type="password" id="password" placeholder="비밀번호는 특수문자, 영어, 숫자를 조합한 8자리 이상으로 입력해주세요.">
-            </li>
-            <li>
-                <label for="password_ckeck">
-                    비밀번호 확인
-                </label>
-                <input type="password" id="password_ckeck" placeholder="비밀번호를 한번더 입력해주세요.">
-            </li>
-            <li>
+
+        <li  class="join_list">
+            <label for="pass1">비밀번호</label>
+            <input title="비밀번호" type="password" name="pass1" id="pass1" autocomplete="off" placeholder="비밀번호는 영문,숫자,특수문자를 포함하여 8자리 이상 입력해주세요" class = "ii_inp text_center">
+        <span id="pass_input" style = "display:none;">비번맨트1</span>
+        <div class="alert-block first-letter-uppercase _msg"></div>
+        </li>
+
+        <li class="join_list">
+            <label for="pass2">비밀번호 확인</label>
+            <input title="비밀번호 확인" type="password" name="pass2" id="pass2" autocomplete="off" placeholder="비밀번호 확인" class = "ii_inp text_center">
+            <span id="pass_chk" style="display:none;" >비번맨트2</span>
+            <div class="alert-block _msg"></div>
+        </li>
+            <li class="join_list">
                 <label for="name">
                     이름
                 </label>
                 <input type="name" id="name" placeholder="이름을 입력해주세요.">
             </li>
-            <li>
-                <label for="address">주소</label>
-                <input type="text" id="sample6_postcode" placeholder="우편번호">
-                <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
-                <input type="text" id="sample6_address" placeholder="주소"><br>
-                <input type="text" id="sample6_detailAddress" placeholder="상세주소">
+            <li class="join_list">
+                <label for="sample4_postcode">
+                    주소
+                </label>
+                <div class="address_box">
+                    <input type="text" id="sample4_postcode" placeholder="우편번호">
+                    <input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기" id="addr_btn"><br>
+                    <input type="text" id="sample4_roadAddress" placeholder="도로명주소">
+                    <span id="guide" style="color:#999;display:none"></span>
+                    <input type="text" id="sample4_detailAddress" placeholder="상세주소">
+                </div>
             </li>
-            <li>
-                <label for="phone">휴대전화</label>
+            <li class="join_list">
+                <label for="phone_2">휴대전화</label>
                 <div>
                     <select name="phone_1" id="phone_1">
                         <option value="010">010</option>
@@ -67,8 +223,42 @@
         </ul>
     </form>
 </section>
-<section>
-    <h3>약관동의</h3>
+<section id="conditions">
+    <h3 class="join_sub_title">약관동의</h3>
+    <ul class="conditions_box">
+        <li class="conditions_list">
+            <p class="conditions_list_title">약관의 동의</p> 
+            <label for="conditions1" id="conditions_check_box" name="conditions1">
+                <input type="checkbox" id="agreement1_check" name="agreement1_check">동의
+            </label>
+            <div class="conditions_inner">
+
+                제 1 조 (목적)
+
+                이 약관은 "회원" 개인 상호 간 또는 “제휴 사업자”와 “회원” 개인 간에 상품 등을 매매하는 것을 중개하고, "상품" 등에 관한 정보를 상호 교환할 수 있도록 크림 주식회사(이하 "회사"라 합니다)가 운영, 제공하는 KREAM 서비스(이하 "서비스")에 대한 것으로 본 약관에서는 "서비스"의 이용과 관련하여 "회사"와 "회원"과의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정합니다.
+                
+                 
+                
+                제 2 조 (용어의 정의)
+                
+                이 약관에서 사용하는 용어의 정의는 다음 각 호와 같으며, 정의되지 않은 용어에 대한 해석은 관계 법령 및 지침, 본 이용약관, 개인정보취급방침, 상관례 등에 의합니다.
+                
+                "서비스"라 함은 회사가 PC 및/또는 모바일 환경에서 제공하는 KREAM 서비스 및 관련 제반 서비스를 말합니다.
+                "회원"이라 함은 "회사"의 "서비스"에 접속하여 이 약관에 따라 "회사"와 이용계약을 체결하고 "회사"가 제공하는 "서비스"를 이용하는 고객을 말합니다.
+                "구매자" 또는 "구매회원"이라 함은 "상품"을 구매하거나 또는 구매할 의사로 서비스를 이용하는 회원을 말합니다.
+                "판매자" 또는 "판매회원"이라 함은 "서비스"에 "상품"을 등록하여 판매하거나 또는 제공할 의사로 서비스를 이용하는 회원을 말합니다.
+                "입찰"이라 함은 "상품"을 구매하기 위하여 원하는 "상품"의 구매 가격을 제출하는 행위 또는 "상품"을 판매하기 위하여 원하는 "상품"의 판매 가격을 제출하는 행위를 말합니다.
+                "거래 체결"이라 함은 "입찰"에 의하여 상품의 거래가 성립되는 것을 말합니다.
+                "게시물"이라 함은 "회원"이 "서비스"를 이용함에 있어 "서비스"상에 게시한 문자, 음성, 음향, 화상, 동영상 등의 정보 형태의 글(댓글 포함), 사진(이미지), 동영상 및 각종 파일과 링크 등 일체를 의미합니다.
+                "회원정보"라 함은 "서비스"를 이용하는 고객이 등록한 정보를 말합니다.
+                "서비스수수료"라 함은 "회원"이 "서비스"를 이용하면서 발생할 수 있는 수수료입니다. "상품"의 판매/구매 및 제반 서비스를 이용함에 따라 부과되는 시스템이용료로서 거래 수수료 또는 판매완료 수수료, 유료부가서비스수수료 등이 있으며, 관련내용은 제24조(서비스수수료)에 명시된 바에 따릅니다.
+                "포인트"라 함은 "서비스"의 효율적 이용을 위해 "회사"가 임의로 책정 또는 지급, 조정할 수 있는 "서비스" 상의 가상 데이터를 의미합니다. "포인트"의 적립, 지급, 사용 등과 관련한 구체적인 정책에 대해서는 이용약관 및 공지사항 등으로 별도 고지하는 바에 따릅니다.
+                “상품”이라 함은 본 약관에 따라 “회원” 간 거래 대상으로서 “서비스”에 등록된 재화 또는 용역을 말합니다.
+                “제휴 사업자”라 함은 “KREAM EXCLUSIVE DROPS” 및 “B2C 상품 페이지”에서 제공하는 통신판매중개를 이용하여 “회원”과 “제휴 사업자 판매 상품”을 거래하고자 “회사”와 별도의 계약을 체결한 사업자를 말합니다.
+                “제휴 사업자 판매 상품”이라 함은 “상품”과는 달리 “제휴 사업자”가 “회사”와 체결한 별도의 계약에 따라 “KREAM EXCLUSIVE DROPS” 및 “B2C 상품 페이지”에서 “회원”에게 판매하는 재화 또는 용역을 말합니다.
+            </div>
+        </li>
+    </ul>
 </section>
 </main>
 </body>
@@ -77,57 +267,104 @@
 
 </script>
 
+<script src="../js/jquery-3.6.0.min.js"></script>
 <script src="../js/jquery.mmenu.all.js"></script>
 <script src="../js/style.js"></script>
 <script src="../js/common.js"></script>
 
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
-    function sample6_execDaumPostcode() {
+    //본 예제에서는 도로명 주소 표기 방식에 대한 법령에 따라, 내려오는 데이터를 조합하여 올바른 주소를 구성하는 방법을 설명합니다.
+    function sample4_execDaumPostcode() {
         new daum.Postcode({
             oncomplete: function(data) {
                 // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
 
-                // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                // 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
                 // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
-                var addr = ''; // 주소 변수
-                var extraAddr = ''; // 참고항목 변수
+                var roadAddr = data.roadAddress; // 도로명 주소 변수
+                var extraRoadAddr = ''; // 참고 항목 변수
 
-                //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
-                if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
-                    addr = data.roadAddress;
-                } else { // 사용자가 지번 주소를 선택했을 경우(J)
-                    addr = data.jibunAddress;
+                // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                    extraRoadAddr += data.bname;
                 }
-
-                // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
-                if(data.userSelectedType === 'R'){
-                    // 법정동명이 있을 경우 추가한다. (법정리는 제외)
-                    // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
-                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
-                        extraAddr += data.bname;
-                    }
-                    // 건물명이 있고, 공동주택일 경우 추가한다.
-                    if(data.buildingName !== '' && data.apartment === 'Y'){
-                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
-                    }
-                    // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
-                    if(extraAddr !== ''){
-                        extraAddr = ' (' + extraAddr + ')';
-                    }
-                    // 조합된 참고항목을 해당 필드에 넣는다.
-                    document.getElementById("sample6_extraAddress").value = extraAddr;
-                
-                } else {
-                    document.getElementById("sample6_extraAddress").value = '';
+                // 건물명이 있고, 공동주택일 경우 추가한다.
+                if(data.buildingName !== '' && data.apartment === 'Y'){
+                   extraRoadAddr += (extraRoadAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                }
+                // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                if(extraRoadAddr !== ''){
+                    extraRoadAddr = ' (' + extraRoadAddr + ')';
                 }
 
                 // 우편번호와 주소 정보를 해당 필드에 넣는다.
-                document.getElementById('sample6_postcode').value = data.zonecode;
-                document.getElementById("sample6_address").value = addr;
-                // 커서를 상세주소 필드로 이동한다.
-                document.getElementById("sample6_detailAddress").focus();
+                document.getElementById('sample4_postcode').value = data.zonecode;
+                document.getElementById("sample4_roadAddress").value = roadAddr;
+                
+                // 참고항목 문자열이 있을 경우 해당 필드에 넣는다.
+                // if(roadAddr !== ''){
+                //     document.getElementById("sample4_extraAddress").value = extraRoadAddr;
+                // } else {
+                //     document.getElementById("sample4_extraAddress").value = '';
+                // }
+
+                var guideTextBox = document.getElementById("guide");
+                // 사용자가 '선택 안함'을 클릭한 경우, 예상 주소라는 표시를 해준다.
+                if(data.autoRoadAddress) {
+                    var expRoadAddr = data.autoRoadAddress + extraRoadAddr;
+                    guideTextBox.innerHTML = '(예상 도로명 주소 : ' + expRoadAddr + ')';
+                    guideTextBox.style.display = 'block';
+
+                } else if(data.autoJibunAddress) {
+                    var expJibunAddr = data.autoJibunAddress;
+                    guideTextBox.innerHTML = '(예상 지번 주소 : ' + expJibunAddr + ')';
+                    guideTextBox.style.display = 'block';
+                } else {
+                    guideTextBox.innerHTML = '';
+                    guideTextBox.style.display = 'none';
+                }
             }
         }).open();
-    }
+    };
+
+
+$("#pass1").on("keyup", function() {
+    //console.log("qwedjiqwepd");
+        if( $("#pass1").val().length == 0 )
+         { 
+            $("#pass_input").html("비밀번호를 입력해주세요");
+            $("#pass_input").show();
+            $("#pass_chk").hide();
+         }
+        else if($("#pass1").val() == $("#pass2").val())
+        {
+            $("#pass_input").hide();
+            $("#pass_chk").show();
+            $("#pass_chk").html("비밀번호가 일치합니다.");
+        }
+        else
+         { 
+            $("#pass_input").hide();
+            $("#pass_chk").show();
+            $("#pass_chk").html("비밀번호가 일치하지 않습니다.");  
+            $('#pass_chk').css("color","#ff4d4d");       
+         }
+    });
+
+$("#pass2").on("change keyup paste", function() {
+        if( $("#pass1").val() == $("#pass2").val() )
+        {
+             $('#pass_chk').html('비밀번호가 일치합니다.');
+             $('#pass_chk').css("color","#4d94ff");
+        }
+        else 
+        {
+             $("#pass_chk").html('비밀번호가 일치하지 않습니다.');
+             $('#pass_chk').css("color","#ff4d4d");
+        }
+    });
+
+    
 </script>

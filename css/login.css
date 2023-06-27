@@ -134,80 +134,77 @@
         font-size: 1.2em;
         margin-bottom: 20px;
     }
-    
-    .login_btn, .join_btn{ 
-        width: 100%;
-        padding: 15px 10px;
-        box-sizing: border-box;
-        font-size: 1.2em;
-        background-color: #252525;
-        color: #fefefe;
-        transition: all .3s;
-        font-weight: 600;
-        border: 1px solid rgba(0, 0, 0, 0);
-    }
-    .login_btn:hover, .join_btn:hover{
-        background-color: #fefefe;
-        color: #252525;
-        border: 1px solid #ddd;
-        box-shadow: 0 0 2px rgba(0, 0, 0, .2);
-    }
-    
-    .find_box{
-        margin-top: 10px;
-    }
-    
-    .login_or{
-        margin: 20px 0;
-        text-align: center;
-        display:block;
-        position: relative;
-        color: #ddd;
-    
-    }
-    .login_or::before, .login_or::after {
-        content: "";
-        display: block;
-        width: 45%;
-        height: 1px;
-        border-top: 1px solid #ddd;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .login_or::after{
-        right: 0;
-    }
-    
-    .join_text{
-        margin-bottom: 20px;
-    }
-    .join_text span{
-        font-weight: 600;
-    }
-    .simple_login{
-        margin-bottom: 100px;
-    }
-    .simple_login img{
-        display: inline-block;
-        width: 30px;
-        margin-right: 20px;
-    }
-    .simple_login li{
-        padding: 15px;
-        font-size: 1.1em;
-        font-weight: 500;
-        border: 1px solid #ddd;
-        margin-bottom: 10px;
-        cursor: pointer;
-    }
-    .simple_login li:hover{
-        background-color: #eee;
-    }
-    
     #login #go-back{
-        width: 30px;
         float: none;
-        opacity: .6;
     }
+}
+
+
+/* join */
+
+#personal_information{
+    padding-top: 50px;
+}
+.join_sub_title{
+    margin-bottom: 25px;
+}
+.join_list {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.join_list label{
+    width: 15%;
+    font-weight: 500;
+}
+.join_list input{
+    width: 400px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.join_list input:focus{
+    border: 1px solid #ddd;
+}
+.address_box{
+    display: inline-block;
+    width: 60%;
+}
+.address_box input{
+    margin-top: 5px;
+}
+#phone_1{
+    margin-right: 15px;
+}
+#phone_2, #phone_3{
+    width: 80px;
+    text-align: right;
+}
+
+#pass_input, #pass_chk{
+    width: 60%;
+    margin-left: 15%;
+    padding-left: 10px;
+    display: none;
+}
+#pass_chk{
+    width: 15% !important;
+    margin-left: 0;
+}
+
+.conditions_list_title{
+    display: inline-block;
+}
+.conditions_list_title::before{
+    content: "[필수]";
+    display: inline;
+    padding-right: 5px;
+    font-size: .8em;
+    vertical-align: top;
+}
+.conditions_inner{
+    display: none;
+    height: 150px;
+    overflow-Y: scroll;
+    padding: 20px 15px;
 }

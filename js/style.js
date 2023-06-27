@@ -126,3 +126,12 @@ $(function(){
     });
 
 });
+
+
+$(function(){
+    $(".conditions_list_title").off('click').click(function(){
+        $(this).siblings(".conditions_inner").slideToggle()
+    });
+
+
+});
