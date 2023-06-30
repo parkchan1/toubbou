@@ -163,55 +163,69 @@
 
 
     </header>
+    <section><!--browse-->
 
-  <section class="swiper-container inquiry_slide_main header_top">
-      <div class="swiper-wrapper">
-          <div class="swiper-slide"><div class="swiper-slide-container">
-              
-              <div class="bg1">
-                  <img src="../images/gallery.jpg" alt="">
-              </div>
-          </div></div>
-          <div class="swiper-slide"><div class="swiper-slide-container">
-              <div class="bg1">
-                  <img src="../images/gallery2.jpg" alt="">
-              </div>
-          </div></div>
-      </div>
-  </section>
+        <article class="swiper-container inquiry_slide_main">
+            <div class="swiper-wrapper">
 
-  <div class="wrap_thumb_layout">
-    <div class="swiper-container inquiry_slide_sub">
-        <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-slide-container">  
+                        <div class="bg1">
+                            <img src="images/gallery.jpg" alt="">
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-slide-container">
+                        <div class="bg1">
+                            <img src="images/gallery2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+               
+            </div> <!--wrapper-->
+
+        </article> <!--inquiry_slide_main-->
+
+        <article class="wrap_thumb_layout">
+            <div class="swiper-container inquiry_slide_sub">
+                <div class="swiper-wrapper">
+
+                  
+            <div class="swiper-slide">
+                <div class="swiper-slide-container">
+                    <div class="sc_slide_text">
+                        <h2>Artists</h2>
+                        <p>
+                        새롬게 떠오르는 신인 아티스트들과 <br>
+                        기존 아름다움을 추구하는 아티스트들의 <br>
+                        환상적인 협업공간을 소개시켜드리겠습니다.
+                        </p>
+            
+                        <button class="sc_slide_btn"  onClick ="window.open('https://parkchan1.github.io/toubbou/project/artists_list.html')">View More</button>
+                    </div>
+                </div>
+            </div>
 
             <div class="swiper-slide">
-              <div class="swiper-slide-container">
-                <div class="sc_slide_text">
-                    <h2>Artists</h2>
-                    <p>
-                      새롬게 떠오르는 신인 아티스트들과 <br>
-                      기존 아름다움을 추구하는 아티스트들의 <br>
-                      환상적인 협업공간을 소개시켜드리겠습니다.
-                    </p>
-        
-                    <button class="sc_slide_btn"  onClick ="window.open('https://parkchan1.github.io/toubbou/project/artists_list.html')">View More</button>
+                <div class="swiper-slide-container">
+                    <div class="sc_slide_text">
+                        <h2>Art Goods</h2>
+                        <p>
+                        아티스틀의 다양한 작품들이 <br>
+                        나만의공간에서 나만의 스타일로 <br>
+                        재탄생하여 나만의 전시회를 열어봐요.
+                        </p> 
+                        <button class="sc_slide_btn"onClick ="window.open('https://parkchan1.github.io/toubbou/project/artshop.html')">View More</button>
+                    </div>
                 </div>
-            </div></div>
-            <div class="swiper-slide"><div class="swiper-slide-container">
-                <div class="sc_slide_text">
-                    <h2>Art Goods</h2>
-                    <p>
-                      아티스틀의 다양한 작품들이 <br>
-                      나만의공간에서 나만의 스타일로 <br>
-                      재탄생하여 나만의 전시회를 열어봐요.
-                    </p> 
-                    <button class="sc_slide_btn"onClick ="window.open('https://parkchan1.github.io/toubbou/project/artshop.html')">View More</button>
-                </div>
-            </div></div>
-        </div>
-    </div>
+                    
+            </div><!--wrapper-->
 
-</div>
+        </article><!--inquiry_slide_sub-->
+    
+    </section><!--browse-->
 
 <article id="inquiry_main">
   <form action="post">
@@ -243,34 +257,40 @@
 <script src="../js/swiper-bundle.min2.js"></script>
 
 
+
 <script>
-	var swiperInMain = $('.inquiry_slide_main').find('.swiper-slide');
-	var swiperInSub = $('.inquiry_slide_sub').find('.inquiry_slide_sub');
+	var swiperTopNum = $('.inquiry_slide_main').find('.swiper-slide');
+	var swiperSubNum = $('.inquiry_slide_sub').find('.inquiry_slide_sub');
 
 	var galleryTop = new Swiper('.inquiry_slide_main', {
     	spaceBetween: 10,	//슬라이드 간격
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+        pagination: {	//페이징 사용자 설정
+        	el: ".swiper-pagination",	//페이징 태그 클래스 설정 
+			clickable: true,	//버튼 클릭 여부
+			type : 'bullets',	//페이징 타입 설정(종류: bullets, fraction, progressbar)
+			// Bullet Numbering 설정
+        	renderBullet: function (index, className) {
+        		return '<span class="' + className + '">' + (index + 1) + "</span>";
+        	},
+		},
 		loop: true,	//슬라이드 반복
-    effect: 'fade',
-    speed: 1500,
-    fadeEffect: { 
-    crossFade: true 
-    },
-    loopedSlides: swiperTopNum.length,
+        effect: 'fade',
+		loopedSlides: swiperTopNum.length	//loop 시 파라미터 duplicate 개수 - 정적으로 숫자 4 표현 가능
     });
 
 
     var galleryThumbs = new Swiper('.inquiry_slide_sub', {
     	spaceBetween: 0,	//슬라이드 간격
+    	navigation: {	//네비게이션 사용자 설정
+    		nextEl: '.swiper-button-next',	//다음 버튼 클래스 설정
+        	prevEl: '.swiper-button-prev',	//이전 버튼 클래스 설정
+    	},
     	centeredSlides: true,	//슬라이드 중앙 배치
     	slidesPerView: 'auto',	//한번에 보여지는 슬라이드 개수(auto 가능)
     	touchRatio: 0.2,	//드래그 비율 설정(기본값: 1, 기본값을 0으로 설정할 경우 드래그 불가능)
     	slideToClickedSlide: true,	//슬라이드가 여러개 나열되어 있을 경우, 클릭 시 해당 슬라이드 위치로 이동
 		loop: true,	//슬라이드 반복
-	    		loopedSlides: swiperTopNum.length,
+		loopedSlides: swiperSubNum.length //loop 시 파라미터 duplicate 개수 - 정적으로 숫자 4 표현 가능
     });
 
 	//Main Swiper와 Thumbnail Swiper가 연동제어 서로를 제어
