@@ -240,7 +240,7 @@
 <script src="../js/style.js"></script>
 <script src="../js/common.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="../js/swiper-bundle.min2.js"></script>
 
 
 <script>
@@ -259,6 +259,7 @@
     fadeEffect: { 
     crossFade: true 
     },
+    loopedSlides: swiperTopNum.length,
     });
 
 
@@ -269,6 +270,7 @@
     	touchRatio: 0.2,	//드래그 비율 설정(기본값: 1, 기본값을 0으로 설정할 경우 드래그 불가능)
     	slideToClickedSlide: true,	//슬라이드가 여러개 나열되어 있을 경우, 클릭 시 해당 슬라이드 위치로 이동
 		loop: true,	//슬라이드 반복
+	    		loopedSlides: swiperTopNum.length,
     });
 
 	//Main Swiper와 Thumbnail Swiper가 연동제어 서로를 제어
