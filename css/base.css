@@ -46,7 +46,7 @@ text-align: center;
 
 
 /* mobile-menu */
-.m-menu_btn{ position: absolute; top: 20px ; right: 15px; display: none;}
+.m-menu_btn{ position: absolute; top: 27px ; right: 15px; display: none;}
 .m-menu_bg{ width: 100%; height: 100vh; background: rgba(100,100,100,.5); position: fixed; top:0; display: none; z-index: 999;}
 
 .m-sub-nav{ display: none;}
