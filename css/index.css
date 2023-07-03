@@ -41,6 +41,9 @@
         display: block;
         margin-bottom: 30px;
     }
+    .scroll_box{
+        bottom:50%;
+    }
 }
 
 /* info */
