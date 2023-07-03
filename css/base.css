@@ -17,7 +17,7 @@ header{ width: 100%; position: absolute; top:20px; left: 0; right: 0; z-index: 9
 
 /* header */
 header{position: absolute; top: 0; left: 0; right: 0; z-index: 2;}
-.logo{ width: 135px; position: absolute; top: 15px; left: 80px; z-index: 990;}
+.logo{ width: 135px; position: absolute; top: 22px; left: 80px; z-index: 990;}
 .logo a{  display: block;}
 .pc-logo{display: block; width: 100%; }
 .m-logos{display: none; }
