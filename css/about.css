@@ -1,11 +1,11 @@
 main{
-    background-color: #252525;
+    background-color: #231f20;
     color: #fefefe;
 }
 
 #name_about{
     background: url(../images/about.png) no-repeat right bottom;
-    background-color: #252525;
+    background-color: #231f20;
     width: 100%;
     height: 85vh;
     display: flex;
@@ -37,7 +37,7 @@ main{
 
     #name_about{
         background: url(../images/about.png) no-repeat right bottom;
-        background-color: #252525;
+        background-color: #231f20;
         height: 85vh;
         flex-wrap: wrap;
     }
@@ -142,7 +142,7 @@ main{
 
 #gallery_info{
     width: 860px;
-    margin: 150px auto;
+    margin: 150px auto 0;
     padding-bottom: 150px;
 }
 

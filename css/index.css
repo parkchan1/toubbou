@@ -97,7 +97,7 @@
     opacity: 1;
 }
 .info_item:nth-child(1) {
-    background-color: #252525;
+    background-color: #231f20;
     color: #fefefe;
 }
 .info_item:nth-child(2) {
@@ -111,7 +111,7 @@
 .info_item:nth-child(6) {
 	grid-column: 3 / span 2;
 	grid-row: 2/ span 1;
-    background-color: #252525;
+    background-color: #231f20;
     color: #fefefe;
 }
 .info_inner_title{
@@ -530,8 +530,8 @@
 .place_btn::after{
     content: "";
     display: block;
-    border-top: 2px solid #252525;
-    border-right: 2px solid #252525;
+    border-top: 2px solid #231f20;
+    border-right: 2px solid #231f20;
     transform: rotate(-45deg);
     width: 10px;
     height: 10px;
@@ -540,8 +540,8 @@
 .place_btn::before{
     content: "";
     display: block;
-    border-bottom: 2px solid #252525;
-    border-left: 2px solid #252525;
+    border-bottom: 2px solid #231f20;
+    border-left: 2px solid #231f20;
     transform: rotate(-45deg);
     width: 10px;
     height: 10px;
@@ -549,7 +549,7 @@
 }
 .place_btn button{ 
     background-color: #fefefe;
-    color: #252525;
+    color: #231f20;
     transition: all .3s;
     display: block;
     width: 250px;
@@ -557,7 +557,7 @@
     font-size: 1.2em;
 }
 .place_btn button:hover{
-    background-color: #252525;
+    background-color: #231f20;
     color: #fefefe;
     transform: translateY(-10px);
 }
@@ -618,7 +618,7 @@
 .aos{
     
     background-color: #161619;
-    color: #ffffff;
+    color: #fefefe;
     height: 100vh;
 }
 
@@ -695,12 +695,9 @@
 
 /*관람안내_mobile*/
 @media (max-width:787px){
-
-    
     .aos{
-        
-        color: #ffffff;
-        height: 100vh;
+        color: #fefefe;
+        height: 100%;
     }
     
     .time{
@@ -711,13 +708,13 @@
     }
     
     .time h2{
-        font-size: 1.5em;
-        padding: 50px 0;
+        font-size: 1.3em;
+        padding: 25px 0;
     }
     
     .time p{
-        padding-bottom: 40px;
-        font-size: 1.2em;
+        padding-bottom: 25px;
+        font-size: 1em;
     }
     
     .time h3{
@@ -725,18 +722,18 @@
     }
     
     .time h3:nth-child(3){
-        padding-bottom: 50px;
+        padding-bottom: 25px;
     }
     
     .time h3:nth-child(4){
-        padding-bottom: 40px;
+        padding-bottom: 25px;
     }
     
     
     /* price */
 
     .price_title{
-        padding: 30px 0;
+        padding:15px 0  30px 0;
     }
     .price_detail{
         width: 100%;

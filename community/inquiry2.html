@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="https://parkchan1.github.io/toubbou/icon/favicon.svg">
-    <title>Exhibition</title>
+    <title>Inquiry</title>
+
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
@@ -13,8 +14,8 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/exhibition.css">
-
+    <link rel="stylesheet" href="../css/community.css">
+    <link rel="stylesheet" href="../css/slide_reset.css">
 </head>
 <body>
        <!-- header -->
@@ -152,7 +153,7 @@
                 <a href="/"><img src="https://parkchan1.github.io/toubbou/icon/cart.svg" alt="장바구니"></a>
             </li>
             <li>
-                <a><img src="https://parkchan1.github.io/toubbou/icon/mypage.svg" alt="마이페이지"></a>
+                <a href="/"><img src="https://parkchan1.github.io/toubbou/icon/mypage.svg" alt="마이페이지"></a>
                     <ul class="pc_nav_sub">
                         <li><a href="/">마이페이지</a></li>
                         <li><a href="https://parkchan1.github.io/toubbou/mypage/login.html">로그인</a></li>
@@ -163,209 +164,114 @@
 
     </header>
 
+  <section class="swiper-container inquiry_slide_main header_top">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"><div class="swiper-slide-container">
+              
+              <div class="bg1">
+                  <img src="../images/gallery.jpg" alt="">
+              </div>
+          </div></div>
+          <div class="swiper-slide"><div class="swiper-slide-container">
+              <div class="bg1">
+                  <img src="../images/gallery2.jpg" alt="">
+              </div>
+          </div></div>
+      </div>
+  </section>
 
-<section class="exhibition_info flex inner header_top">
-    <div class="exhibition_info_img">
-        <img src="../images/Experience_1.jpg" alt="대표작품">
-    </div>
-    <div class="exhibition_info_open">
-        <h3>DEACOCO FUN</h3>
-        <p>Jul 4 - Aug 24, 2023</p>
-        <p>1전시관</p>
-    </div>
-    <div class="exhibition_info_text flex">
-        <h3 class="exhibition_info_title">Comment</h3>
-        <div class="flex exhibition_info_text_inner">
-            <p class="exhibition_info_text_en">
-                "I believe that nothing will end. I believe that nothing will disappear" <br>
-                Design Literature Award-winning artist Ahn Hyun-ho's second work exhibition <br> 
-                A place of warm sorrow that is best prepared with pain that cannot be ignored. I console you, but the wound is too big to overcome. But life continues in the midst of sorrow
-           </p>
-           <p class="exhibition_info_text_ko">
-               “끝나는 것은 없다고 믿는다 아무것도 사라지지 않는다고 믿는다” <br>
-               디자인문학상 수상 작가 안현호 두번째 작품전 <br>
-               외면할 수 없는 고통을 품고 최선으로 마련하는 따뜻한 슬픔의 자리 위로하지만 상처가 너무도 크기에 차마 이겨낼 수가 없다. 그러나 애끊는 슬픔 속에서도 삶은 계속되고 
-           </p>
+  <div class="wrap_thumb_layout">
+    <div class="swiper-container inquiry_slide_sub">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="swiper-slide-container">
+                <div class="sc_slide_text">
+                    <h2>Artists</h2>
+                    <p>
+                      새롬게 떠오르는 신인 아티스트들과 <br>
+                      기존 아름다움을 추구하는 아티스트들의 <br>
+                      환상적인 협업공간을 소개시켜드리겠습니다.
+                    </p>
+        
+                    <button class="sc_slide_btn"  onClick ="window.open('https://parkchan1.github.io/toubbou/project/artists_list.html')">View More</button>
+                </div>
+            </div></div>
+            <div class="swiper-slide"><div class="swiper-slide-container">
+                <div class="sc_slide_text">
+                    <h2>Art Goods</h2>
+                    <p>
+                      아티스틀의 다양한 작품들이 <br>
+                      나만의공간에서 나만의 스타일로 <br>
+                      재탄생하여 나만의 전시회를 열어봐요.
+                    </p> 
+                    <button class="sc_slide_btn"onClick ="window.open('https://parkchan1.github.io/toubbou/project/artshop.html')">View More</button>
+                </div>
+            </div></div>
         </div>
-    </div>        
-</section>
-<div class="swiper exbihition exhibition_slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="../images/exhibition_work_1.jpg" alt="전시목록">
-      </div>
-
-      <div class="swiper-slide">
-        <img src="../images/exhibition_work_2.jpg" alt="전시목록">
-      </div>
-
-      <div class="swiper-slide">
-        <img src="../images/exhibition_work_3.jpg" alt="전시목록">
-      </div>
-
-      <div class="swiper-slide">
-        <img src="../images/exhibition_work_4.jpg" alt="전시목록">
-      </div>
-
-      <div class="swiper-slide">
-        <img src="../images/exhibition_work_5.jpg" alt="전시목록">
-      </div>
-      
     </div>
-    <div class="swiper-pagination"></div>
-  </div>
 
-<section class="inner">
-    <h3 class="exhibition_info_title">To exhibition works story</h3>
-
-    <ul class="flex exhibition_story_area">
-
-        <li class="exhibition_story_list">
-            <div class="square_box">
-                <img src="../images/exhibition_detail_1.jpg" alt="작품1">
-            </div>
-            <dl>
-                <dt>Simplet Cosmo</dt>
-                <dd><strong> Ahn Hyunho </strong>2017</dd>
-                <dd>179 * 180 <span>cm</span></dd>
-            </dl>
-            <button class="exhibition_inquiry">문의하기</button>
-        </li>
-
-        <li class="exhibition_story_list">
-            <div class="square_box">
-                <img src="../images/exhibition_detail_2.jpg" alt="작품1">
-            </div>
-            <dl>
-                <dt>Simplet Cosmo</dt>
-                <dd><strong> Ahn Hyunho </strong>2017</dd>
-                <dd>179 * 180 <span>cm</span></dd>
-            </dl>
-            <button class="exhibition_inquiry">문의하기</button>
-        </li>
-
-        <li class="exhibition_story_list">
-            <div class="square_box">
-                <img src="../images/exhibition_detail_3.jpg" alt="작품1">
-            </div>
-            <dl>
-                <dt>Simplet Cosmo</dt>
-                <dd><strong> Ahn Hyunho </strong>2017</dd>
-                <dd>179 * 180 <span>cm</span></dd>
-            </dl>
-            <button class="exhibition_inquiry">문의하기</button>
-        </li>
-
-        <li class="exhibition_story_list">
-            <div class="square_box">
-                <img src="../images/exhibition_detail_4.jpg" alt="작품1">
-            </div>
-            <dl>
-                <dt>Simplet Cosmo</dt>
-                <dd><strong> Ahn Hyunho </strong>2017</dd>
-                <dd>179 * 180 <span>cm</span></dd>
-            </dl>
-            <button class="exhibition_inquiry">문의하기</button>
-        </li>
-
-        <li class="exhibition_story_list">
-            <div class="square_box">
-                <img src="../images/exhibition_detail_5.jpg" alt="작품1">
-            </div>
-            <dl>
-                <dt>Simplet Cosmo</dt>
-                <dd><strong> Ahn Hyunho </strong>2017</dd>
-                <dd>179 * 180 <span>cm</span></dd>
-            </dl>
-            <button class="exhibition_inquiry">문의하기</button>
-        </li>
-
-        <li class="exhibition_story_list">
-            <div class="square_box">
-                <img src="../images/exhibition_detail_6.jpg" alt="작품1">
-            </div>
-            <dl>
-                <dt>Simplet Cosmo</dt>
-                <dd><strong> Ahn Hyunho </strong>2017</dd>
-                <dd>179 * 180 <span>cm</span></dd>
-            </dl>
-            <button class="exhibition_inquiry">문의하기</button>
-        </li>
-        
-
-        
-    </ul>
-</section>
-
-<!-- footer -->
-<footer>
-    <div class="footer_area inner">
-    <div class="footer-inner">
-      <dl class="f-company">
-        <dt>toubbou</dt>
-        <dd>대표명 : 홍길동</dd>
-        <dd>사업자 등록번호 : 778-88-09549580</dd>
-      </dl>
-  
-      <dl class="f-notice">
-        <dt>Notice</dt>
-        <dd><a href="https://parkchan1.github.io/toubbou/project/event.html#notice">공지사항</a></dd>
-        <dd><a href="https://parkchan1.github.io/toubbou/community/faq.html">FAQ</a></dd>
-        <dd><a href="https://parkchan1.github.io/toubbou/community/faq.html">교환 / 반품 안내</a></dd>
-        <dd><a onclick="pageReady();">이용약관</a></dd>
-        <dd><a onclick="pageReady();">개인정보처리방침</a></dd>
-      </dl>
-  
-      <dl class="f-csinfo">
-        <dt>CS Info</dt>
-        <dd><a href="tel:1668-4516">1588-4516</a></dd>
-        <dd>업무시간 : 9:00AM - 6:00PM</dd>
-        <dd>점심시간 : 12:00PM - 1:00PM</dd>
-        <dd>기업은행 : 886-1250-5411-51</dd>
-        <dd>예금주 : (주)toubbou</dd>
-      </dl>
-      <ul class="f-sns">
-        <li><a onclick="pageReady();"><img src="https://parkchan1.github.io/toubbou/images/face_icon.png" alt="facebook_icon"></a></li>
-        <li><a onclick="pageReady();"><img src="https://parkchan1.github.io/toubbou/images/insta_icon.png" alt="instagram_icon"></a></li>
-        <li><a onclick="pageReady();"><img src="https://parkchan1.github.io/toubbou/images/twitter_icon.png" alt="twitter_icon"></a></li>
-    </ul>
-    </div>
-    <div class="f-bottom">
-      <p>(주)toubbou 부산광역시 해운대구 센텀북대로60  E-mail : gjgy486@naver.com</p>
-      <p>(C) 2023 toubbou. ALL RIGHTS RESERVED. DESIGN BY CHaChan</p>
-    </div>
 </div>
-  </footer>
-        
+
+<article id="inquiry_main">
+  <form action="post">
+    <h2 class="inquiry_main_title">
+      Inquiry
+    </h2>
+    <ul>
+      <li class="flex">
+        <label for="name">Name</label> <input type="text" id="name" placeholder="이름을 입력해주세요.">
+      </li>
+      <li class="flex">
+        <label for="email">E-mail</label> <input type="email" id="email" placeholder="이메일을 입력해주세요.">
+      </li>
+      <li class="flex">
+        <label for="textarea">Details inquiry</label> <textarea name="textarea" id="textarea" cols="30" rows="7"></textarea>
+      </li>
+    </ul>
+    <button type="submit" class="inquiry_btn">I'm going to knock</button>
+  </form>
+</article>
 </body>
 </html>
+
 
 <script src="../js/jquery-3.6.0.min.js"></script>
 <script src="../js/style.js"></script>
 <script src="../js/common.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="../js/swiper-bundle.min2.js"></script>
+
 
 <script>
-    AOS.init({
-});
+	var swiperInMain = $('.inquiry_slide_main').find('.swiper-slide');
+	var swiperInSub = $('.inquiry_slide_sub').find('.inquiry_slide_sub');
 
-var swiper = new Swiper(".exbihition", {
-        pagination: {
-            el: ".swiper-pagination",
-            type: "progressbar",
-        },
-      freeMode: true,
-
-      breakpoints: {
-    320: {
-      slidesPerView:1.2,
-      spaceBetween: 30
+	var galleryTop = new Swiper('.inquiry_slide_main', {
+    	spaceBetween: 10,	//슬라이드 간격
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+		loop: true,	//슬라이드 반복
+    effect: 'fade',
+    speed: 1500,
+    fadeEffect: { 
+    crossFade: true 
     },
-    788: {
-      slidesPerView: 2,
-      spaceBetween: 30
-    }
-}
     });
+
+
+    var galleryThumbs = new Swiper('.inquiry_slide_sub', {
+    	spaceBetween: 10,	//슬라이드 간격
+    	centeredSlides: true,	//슬라이드 중앙 배치
+    	slidesPerView: 'auto',	//한번에 보여지는 슬라이드 개수(auto 가능)
+    	touchRatio: 0.2,	//드래그 비율 설정(기본값: 1, 기본값을 0으로 설정할 경우 드래그 불가능)
+    	slideToClickedSlide: true,	//슬라이드가 여러개 나열되어 있을 경우, 클릭 시 해당 슬라이드 위치로 이동
+		loop: true,	//슬라이드 반복
+    });
+
+	//Main Swiper와 Thumbnail Swiper가 연동제어 서로를 제어
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
 </script>

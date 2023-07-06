@@ -98,6 +98,7 @@
     width: 40%;
     margin: 13px auto;
 }
+
 .event_ex_list .square_box{
     width: 60%;
     margin: 0 auto 10px;
@@ -106,9 +107,23 @@
     display: block;
     text-align: center;
     font-weight: 600;
+    padding-bottom: 5px;
+    cursor: pointer;
 }
+
+.event_ex_list> a:after {
+  display:block;
+  content: '';
+  padding-top: 5px;
+  border-bottom: solid 3px #231f20;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+  transform-origin:  0% 50%;
+}
+
+.event_ex_list> a:hover:after { transform: scaleX(1); }
 .event_notice{
-    background-color: #252525;
+    background-color: #231f20;
     color: #fefefe;
     width: 60%;
 }

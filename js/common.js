@@ -122,3 +122,7 @@ tabMenu.forEach(function(item){
   document.getElementById("go-back").addEventListener("click", () => {
     history.back();
   });
+
+  const pageReady = () => {
+    alert("페이지 준비중입니다.")
+  };

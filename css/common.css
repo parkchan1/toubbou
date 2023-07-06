@@ -141,8 +141,8 @@
   opacity: 1;
 } 
 .next_button::before{
-  content: "";display: inline-block; border-bottom: 2px solid #252525; border-right: 2px solid #252525; width: 10px;height: 10px; transform: rotate(315deg);
+  content: "";display: inline-block; border-bottom: 2px solid #231f20; border-right: 2px solid #231f20; width: 10px;height: 10px; transform: rotate(315deg);
 }
 .prev_button::after{
-  content: "";display: inline-block; border-bottom: 2px solid #252525; border-right: 2px solid #252525; width: 10px;height: 10px; transform: rotate(135deg);
+  content: "";display: inline-block; border-bottom: 2px solid #231f20; border-right: 2px solid #231f20; width: 10px;height: 10px; transform: rotate(135deg);
 }

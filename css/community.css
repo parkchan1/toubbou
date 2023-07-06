@@ -1,7 +1,7 @@
 /* inquiry */
 
 .bg1{
-    opacity: .5;
+    opacity: .7;
     height: 100%;
 }
 
@@ -91,14 +91,14 @@
     padding: 3px 10px;
 }
 #inquiry_main input:focus{
-    border-bottom: 1px solid #252525;
+    border-bottom: 1px solid #231f20;
 }
 #inquiry_main textarea{
     padding: 10px;
     box-sizing: border-box;
 }
 #inquiry_main textarea:focus{
-    border: 1px solid #252525!important;
+    border: 1px solid #231f20!important;
 }
 #inquiry_main .flex{
     margin-bottom: 15px;
@@ -120,7 +120,7 @@
 
 .inquiry_btn:hover{
     color: #fefefe;
-    background-color: #252525;
+    background-color: #231f20;
 }
 
 .sc_slide_btn{
@@ -173,14 +173,14 @@
     padding: 3px 10px;
 }
 #inquiry_main input:focus{
-    border-bottom: 1px solid #252525;
+    border-bottom: 1px solid #231f20;
 }
 #inquiry_main textarea{
     width: 100%;
 margin-top: 15px;
 }
 #inquiry_main textarea:focus{
-    border: 1px solid #252525!important;
+    border: 1px solid #231f20!important;
 }
 #inquiry_main .flex{
     margin-bottom: 15px;
@@ -201,7 +201,7 @@ margin-top: 15px;
 
 .inquiry_btn:hover{
     color: #fefefe;
-    background-color: #252525;
+    background-color: #231f20;
 }
 
 .sc_slide_btn{
@@ -229,7 +229,7 @@ margin-top: 15px;
 }
 
 .faq_title{
-    color: #252525;
+    color: #231f20;
     font-size: 20em;
     position: absolute;
     top: 0 ;
@@ -258,7 +258,7 @@ margin-top: 15px;
 
 }
 .faq_on{
-    border-bottom: 1px solid #252525;
+    border-bottom: 1px solid #231f20;
 }
 .faq_list:last-child{
     border-bottom: none;

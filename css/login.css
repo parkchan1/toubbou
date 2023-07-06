@@ -31,7 +31,7 @@
     margin-bottom: 20px;
 }
 #login_form input:focus{
-    outline: 1.2px solid #252525;
+    outline: 1.2px solid #231f20;
 }
 
 .login_btn, .join_btn{ 
@@ -39,7 +39,7 @@
     padding: 15px 10px;
     box-sizing: border-box;
     font-size: 1.2em;
-    background-color: #252525;
+    background-color: #231f20;
     color: #fefefe;
     transition: all .3s;
     font-weight: 600;
@@ -47,7 +47,7 @@
 }
 .login_btn:hover, .join_btn:hover{
     background-color: #fefefe;
-    color: #252525;
+    color: #231f20;
     border: 1px solid #ddd;
     box-shadow: 0 0 2px rgba(0, 0, 0, .2);
 }
@@ -141,12 +141,40 @@
 
 
 /* join */
-
+.join_area{
+    max-width:1200px;
+    width: 60%;
+    margin: 0 auto;
+}
 #personal_information{
     padding-top: 50px;
 }
+
+.join_area section{
+    margin: 60px auto;
+}
 .join_sub_title{
     margin-bottom: 25px;
+}
+
+.join_sub_title::after{
+    content: "";
+    display: inline-block;
+    width: 80%;
+    border-top:1.5px solid #231f20;
+    vertical-align: super;
+    margin-left: 20px;
+}
+#conditions .join_sub_title::after{
+    width: 70%;
+}
+
+#easy_subscription .join_sub_title::after{
+    width: 91%;
+}
+.join_box{
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .join_list {
     margin: 10px 0;
@@ -155,6 +183,9 @@
 }
 .join_list label{
     width: 15%;
+    font-weight: 500;
+}
+.agreement0_check{
     font-weight: 500;
 }
 .join_list input{
@@ -191,9 +222,13 @@
     width: 15% !important;
     margin-left: 0;
 }
-
+.conditions_list{
+    margin: 10px 0 10px 20px;
+}
 .conditions_list_title{
     display: inline-block;
+    font-weight: 500;
+    cursor: pointer;
 }
 .conditions_list_title::before{
     content: "[필수]";
@@ -201,10 +236,118 @@
     padding-right: 5px;
     font-size: .8em;
     vertical-align: top;
+    margin-right: 10px;
+}
+
+
+#conditions_check_box{
+    margin-left: 20px;
+    vertical-align: bottom;
 }
 .conditions_inner{
     display: none;
     height: 150px;
     overflow-Y: scroll;
     padding: 20px 15px;
+    margin-top: 15px;
+}
+.cd_on{
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2);
+}
+.agreement_chk{
+    margin-right: 5px;
+}
+
+.join_btns{ 
+    text-align: center;
+}
+
+.join_back, .join_go{
+    margin: 0 10px;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all .3s;
+}
+.join_back:hover, .join_go:hover{
+background-color:#231f20 ;
+color: #fefefe;
+}
+
+.join_area .simple_login{
+    margin-bottom: 50px;
+}
+
+
+@media (max-width:787px){
+    .join_area{
+        width: 95%;
+    }
+    #personal_information{
+        padding-top: 50px;
+    }
+    
+    .join_area section{
+        margin: 60px auto;
+    }
+    .join_sub_title{
+        margin-bottom: 25px;
+    }
+    
+    .join_sub_title::after{
+        width: 65%;
+    }
+    #conditions .join_sub_title::after{
+        width: 55%;
+    }
+    
+    #easy_subscription .join_sub_title::after{
+        width: 76%;
+    }
+    .join_box{
+        padding: 0;
+    }
+
+    .join_list {
+        margin: 10px 0 10px 5px;
+    }
+
+    .join_list label{
+        width: 25%;
+    }
+    .join_list input{
+        width: 75%;
+    }
+
+    .address_box{
+        width: 75%;
+    }
+
+
+    #pass_input, #pass_chk{
+        width: 60%;
+        margin-left: 15%;
+        padding-left: 10px;
+        display: none;
+    }
+    #pass_chk{
+        width: 100% !important;
+    }
+    .conditions_list{
+        margin: 10px 0 10px 5px;
+    }
+
+    #conditions_check_box{
+        margin-left:5px;
+    }
+
+
+
+    .join_area .simple_login,  .join_btns{
+        margin-bottom:15px;
+    }
+
 }

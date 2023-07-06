@@ -41,7 +41,7 @@
     padding-bottom: 10px;
 }
 #searchText:focus{
-    border-bottom: 1px solid #252525;
+    border-bottom: 1px solid #231f20;
 }
 #searchText::placeholder{
     text-align: center;
@@ -177,7 +177,7 @@
 }
 .exhibition_story_area li{
     width: 23%;
-    margin: 30px 1% 0;
+    margin: 30px 1% 15px;
     text-align: center;
 }
 .exhibition_story_list dt{
@@ -188,13 +188,13 @@
     margin: 10px auto;
     display: block;
     font-weight: 600;
-    border: 1px solid #252525;
+    border: 1px solid #231f20;
     padding: 5px 0;
     transition: all .3s;
 }
 .exhibition_inquiry:hover{
     color: #fefefe;
-    background-color: #252525;
+    background-color: #231f20;
 }
 
 @media (max-width: 787px){
@@ -254,7 +254,7 @@ text-align: center;
 
 .exhibition_story_area li{
     width: 45%;
-    margin: 30px 2.5% 0;
+    margin: 30px 2.5% 10px;
 }
 .exhibition_story_list dt{
     padding-top: 10px;
@@ -264,13 +264,13 @@ text-align: center;
     margin: 10px auto;
     display: block;
     font-weight: 600;
-    border: 1px solid #252525;
+    border: 1px solid #231f20;
     padding: 5px 0;
     transition: all .3s;
 }
 .exhibition_inquiry:hover{
     color: #fefefe;
-    background-color: #252525;
+    background-color: #231f20;
 }
 
 }

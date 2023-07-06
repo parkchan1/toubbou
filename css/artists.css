@@ -18,7 +18,7 @@
     margin:3px  5px;
    }
 .left_search_name li:last-child{
-    border-bottom: 1px solid #252525;
+    border-bottom: 1px solid #231f20;
     padding-bottom: 15px;
 }
 .left_search_name li a{
@@ -220,13 +220,13 @@
     margin: 10px auto;
     display: block;
     font-weight: 600;
-    border: 1px solid #252525;
+    border: 1px solid #231f20;
     padding: 5px 0;
     transition: all .3s;
 }
 .buyNow_btn:hover{
     color: #fefefe;
-    background-color: #252525;
+    background-color: #231f20;
 }
 
 
