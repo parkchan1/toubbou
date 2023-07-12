@@ -102,7 +102,7 @@
 .m_artists_list_text{
     display: none;
 }
-@media (max-width:787px){
+@media (max-width:1023px){
     .artists_main{
         flex-wrap: wrap;
     }
@@ -126,10 +126,10 @@
         display: none;
     }
     .artists_list{
-        width:90%;
+        width:40%;
         height: auto;
         position: unset;
-        margin: 10px 5%;
+        margin: 15px 5%;
     }
     
     #left_search{
@@ -147,6 +147,13 @@
         display: block;
         font-size: 1.2em;
         padding-top: 10px;
+    }
+}
+
+@media (max-width:767px){
+    .artists_list{
+        width:90%;
+        margin: 10px 5%;
     }
 }
 
@@ -242,7 +249,7 @@
     display: block;
 }
 
-@media (max-width:787px){
+@media (max-width:767px){
 
 .artist_subtitle{
     margin: 60px 0 30px 0;

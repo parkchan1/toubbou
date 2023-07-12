@@ -59,7 +59,7 @@
     float: right;
     margin-right: 30px;
 }
-@media (max-width:787px){
+@media (max-width:767px){
 .search_area{
   width: 90%;
   text-align: center;

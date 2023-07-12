@@ -114,7 +114,7 @@
     opacity: 1;
 }
 
-@media (max-width:787px){
+@media (max-width:767px){
     #login{
         width: 100%;
         top: 4%;
@@ -282,7 +282,7 @@ color: #fefefe;
 }
 
 
-@media (max-width:787px){
+@media (max-width:767px){
     .join_area{
         width: 95%;
     }

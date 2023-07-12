@@ -83,9 +83,23 @@ text-align: center;
 .m-info-wrap li img{ width: 25%; margin: 5px auto 0;
 padding-bottom: 5px;}
 .m-info-wrap li p{ font-size: .8em;}
-@media (max-width:787px){
-  .pc-nav-wrap{ display: none;}
+/* tablet */
+@media (min-width:768px) and (max-width:1023px){
   .m-menu_btn{ display: block;}
+  .pc-nav-wrap, .header_tool{display: none;}
+
+.m-title img{width: 35%;}/**/
+.user-hello{font-size: 1.5em; margin: 10px auto;}/**/
+.m-log-box a{ font-size: 1em;}/**/
+.m-sub-btn> a{ font-size: 1.5em;}/**/
+.m-menu_btn, .close_btn{ width:35px;} /**/
+.m-info-wrap li img{ width: 15%;}/**/
+.m-info-wrap li p{ font-size: 1.2em;}/**/
+.m-sub-nav li a{ font-size: 1em;}
+}
+@media (max-width:767px){
+  .m-menu_btn{ display: block;}
+  .pc-nav-wrap{ display: none;}
   .top_up{ width: 0;}
   .header-bg{ display: none !important;}
   .logo{left: 50%; transform: translateX(-50%);}
@@ -122,7 +136,7 @@ footer a{  font-size: 1em; color: #efefef;}
 .f-sns li{ width: 20%; margin-right: 10px;}
 .f-bottom{ text-align: center;  padding-bottom: 1%;}
 
-@media (max-width:787px){
+@media (max-width:767px){
   footer{ width: 100%;  margin-top: 10%;   font-size: .8em; line-height: 1.5em; font-weight: 300; border-top: 1px solid #231f20;}
   footer a{  font-size: 1em;}
   .footer-inner{display: flex; padding: 2% 0 5%; flex-wrap:wrap-reverse;} 
@@ -142,7 +156,7 @@ footer a{  font-size: 1em; color: #efefef;}
 
 
 .slide-banner1{ height: 30vh !important;}
-@media (max-width:787px){
+@media (max-width:767px){
   .slide-banner1{ height: 50vh !important;}
 }
 

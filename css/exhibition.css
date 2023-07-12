@@ -1,8 +1,7 @@
 
-
-
 #exhibition_search_box{
     text-align: center;
+    margin-top: 150px;
 }
 
 .tab_menu{ 
@@ -71,9 +70,15 @@
 .exhibition_contents_list p{
  font-size: 1.2em;
 }
+.tab_nontext{ 
+    text-align: center;
+    margin: 50px 0;
+}
 
-
-@media (max-width: 787px){
+@media (max-width: 767px){
+    #exhibition_search_box{
+        margin-top: 100px;
+    }
     .tab_menu_wrap{ width: 90%;}
 
     #searchText{
@@ -197,7 +202,7 @@
     background-color: #231f20;
 }
 
-@media (max-width: 787px){
+@media (max-width: 767px){
 
 
 .exhibition_info_text{

@@ -24,14 +24,22 @@ main{
     padding-top: 20vh;
     box-sizing:border-box;
 }
-
-@media(max-width:1199px){
-
-    .artists_comment_inner{
-        width: 40%;
+@media (min-width:768px) and (max-width:1023px){
+    #name_about{
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .name_about_left{
+        padding: 50px 0;
+        text-align: center;
+        width: 100%;
+    }
+    .name_about_right{
+        text-align: center;
+        width: 100%;
+        padding: 0;
     }
 }
-
 
 @media (max-width:767px){
 
@@ -88,15 +96,9 @@ main{
     padding-top: 15px;
  }
 
-@media(max-width:1199px){
-
-    .artists_comment_inner{
-        width: 40%;
-    }
-}
 
 
-@media (max-width:767px){
+@media (max-width:787px){
 
 
 
@@ -144,6 +146,7 @@ main{
     width: 860px;
     margin: 150px auto 0;
     padding-bottom: 150px;
+    overflow: hidden;
 }
 
 .gallery_info_inner{
@@ -163,8 +166,21 @@ main{
  box-sizing: border-box;
  width: 400px;
 }
+@media (min-width:768px) and (max-width:1023px){
 
-@media (max-width:767px){
+    /* .artists_comment_inner{
+        width: 40%;
+    } */
+
+    #gallery_info{
+        width: 100%;
+        margin: 150px auto 0;
+        padding-bottom: 150px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width:787px){
 
     #gallery_info{
         width: 100%;

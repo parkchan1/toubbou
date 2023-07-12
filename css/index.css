@@ -33,7 +33,7 @@
     50%{ top:15px; left:0;}
     100%{ top:0px; left: 0px;}
 }
-@media (max-width:787px){
+@media (max-width:767px){
     .pc-poster{
         display: none;
     }
@@ -121,10 +121,56 @@
     font-size: 2em;
     left: 20px;
 }
-@media (min-width:788px) and (max-width:1200px){
+@media (max-width:1023px){
+    #artshop{
+        width: 100%;
+    }
+    #artshop h1{
+        margin-left: 2.5%;
+    }
 
+    #info_container{
+        max-width:100%;
+        margin: 30px auto;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-rows: 200px 200px;
+    }
+    .info_item{
+        height: 200px;
+    }
+    .info_item:nth-child(1) {
+        grid-column: 1 / span 2;
+        grid-row: 2/ span 1;
+    }
+    .info_item:nth-child(2) {
+        grid-column: 3 / span 1;
+        grid-row: 1/ span 1;
+        height: 200px;
+    }
+    .info_item:nth-child(2) img{
+        position: absolute;
+        width: 100%;
+        bottom: -285px;
+        right: 0px;
+
+    }
+
+    .info_item_inner{
+        width: 100%;
+    }
+    .info_item:nth-child(6) {
+        grid-column: 1 / span 2;
+        grid-row: 4/ span 1;
+    }
+    .info_inner_title{
+        font-size: 1em;
+        left: 20px;
+    }
+    .info_item_hover{
+        display: none;
+    }
   }
-@media (max-width:787px){
+@media (max-width:767px){
     #artshop{
         width: 100%;
     }
@@ -473,7 +519,7 @@
 }
 
 
-@media (max-width:787px){
+@media (max-width:767px){
     .ex_text h3{
     font-size: 1.5em;
     }
@@ -562,13 +608,7 @@
     transform: translateY(-10px);
 }
 
-@media(max-width:1199px){
-
-
-}
-
-
-@media (max-width:787px){
+@media(max-width:1024px){
     #place{
         padding-bottom: 80px;
         flex-direction: column;
@@ -592,7 +632,7 @@
     .place_r{ width: 100%;}
     .place_btn{ 
         flex-direction: row;
-        margin-top: 300px;
+        margin-top:600px;
         justify-content: center;
     }
     .place_btn::after{
@@ -605,6 +645,15 @@
     }
     .place_btn button{ 
         width: 28%;
+    }
+
+}
+
+
+@media (max-width:767px){
+  
+    .place_btn{ 
+        margin-top: 300px;
     }
 }
     
@@ -694,7 +743,7 @@
 }
 
 /*관람안내_mobile*/
-@media (max-width:787px){
+@media (max-width:767px){
     .aos{
         color: #fefefe;
         height: 100%;
