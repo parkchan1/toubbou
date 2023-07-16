@@ -10,7 +10,7 @@ header{ width: 100%; position: absolute; top:20px; left: 0; right: 0; z-index: 9
 .sign_box{ float: right;}
 .header-bg{background-color: rgba(255, 255, 255, .6); width: 100%; height: 75px; position:absolute; top:0; left:0; right:0;z-index:-1; display: none; }
 .pc_nav> li{ margin-left:10px}
-.pc_nav> li> a{ display: block; padding: 0 17px 5px; font-weight: 400; color:#000000;}
+.pc_nav> li> a{ display: block; padding: 0 17px 5px; font-weight: 400; color:#231f20;}
 
 .pc_nav> li:nth-child(1){ margin-left: 100px;} */
 
@@ -25,7 +25,37 @@ header{position: absolute; top: 0; left: 0; right: 0; z-index: 2;}
 .header-bg{background-color: rgba(255, 255, 255, .75); width: 100%; height: 75px; position: absolute;top: 0;left: 0; right: 0; z-index: -1; display: none;}
 .pc-nav-wrap{position: absolute; top: 30px; left: 50%;  z-index: 2; transform: translateX(-50%); display: flex;}
 .pc_nav{ display: flex;}
-.pc_nav li>a{ display: block; width: 120px; text-align: center;  } 
+
+.pc_nav >li>a{ display: block; width: 120px; text-align: center; position: relative; padding-bottom: 10px;} 
+
+.pc_nav >li>a::before {
+  width: 100%;
+  content: '';
+  position: absolute;
+  bottom: 0%;
+  left:0px;
+  height: 1px;
+  background: #231f20;
+  display: block;
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+  transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+}
+
+.pc_nav >li>a:hover::before {
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1)
+}
+
 .header_tool{ display: flex;position: absolute;top: 30px; right: 50px;   z-index: 998;}
 .header_tool li{ width: 70px;}
 .header_tool img{padding: 0 24px; box-sizing: border-box;}
@@ -52,8 +82,8 @@ text-align: center;
 } 
 
 .pc_nav_sub a:hover{ 
-  border: 1px solid #000000; 
-  color: #000000;
+  border: 1px solid #231f20; 
+  color: #231f20;
 } */
 .pc_nav_sub a{
   border:1px solid transparent; 
@@ -65,6 +95,7 @@ text-align: center;
   display: block;
   box-sizing: border-box;
   position: relative;
+  text-align: center;
 }
 .pc_nav_sub a::before{
   content: '';
@@ -74,8 +105,8 @@ text-align: center;
   z-index:1;
   width: 0%;
   height:1px;
-  background: #000000;
-  box-shadow: inset 0px 0px 0px #000000;
+  background: #231f20;
+  box-shadow: inset 0px 0px 0px #231f20;
   display: block;
   -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
   transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
@@ -93,7 +124,7 @@ text-align: center;
   z-index:1;
   width: 0%;
   height:1px;
-  background: #000000;
+  background: #231f20;
   -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
   transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
 }
@@ -101,8 +132,8 @@ text-align: center;
   width:100%;
 }
 .pc_nav_sub a:hover{
-  border-left:1px solid #000000;
-  border-right:1px solid #000000;
+  border-left:1px solid #231f20;
+  border-right:1px solid #231f20;
 }
 
 
@@ -119,7 +150,7 @@ text-align: center;
 
 .sidebar_menu{display: none; width: 85%; height: 100vh; background: #fff; position: fixed; top:0; right: -80%; z-index: 999;}
 
-.m-title{ text-align: center; border-bottom: 1px solid #000000; height: 70px;padding: 20px 0;}
+.m-title{ text-align: center; border-bottom: 1px solid #231f20; height: 70px;padding: 20px 0;}
 .m-title img{ display: inline-block; width: 55%; margin:15px auto; }
 .close_btn{width: 25px;height: 25px; position: absolute; top: 30px; right: 20px;}
 
@@ -130,8 +161,8 @@ text-align: center;
 
 .user-hello{ text-align: center;}
 .m-log-box{ display: flex; justify-content: center; margin: 15px 0; }
-.m-log-box a{ display: block; padding: 3px 0; border:1px solid #000000 ; width: 30%; text-align: center; margin: 0 5px; font-size: .65em;}
-.logout-btn, .login-btn{ background-color: #000000; color: #fff; }
+.m-log-box a{ display: block; padding: 3px 0; border:1px solid #231f20 ; width: 30%; text-align: center; margin: 0 5px; font-size: .65em;}
+.logout-btn, .login-btn{ background-color: #231f20; color: #fff; }
 
 .m-sub-btn { margin-bottom: 0px;}
 .m-sub-btn> a{ font-size: .9em; display: block; padding:5px 0;}
@@ -139,7 +170,7 @@ text-align: center;
 .m-menu_btn, .close_btn{ width: 20px; height: 20px;}
 .m-menu_btn img, .close_btn img{ width: 100%;}
 .mobile-btn-1{ float: right;}
-.mobile-btn-1::before{ content: "";display: inline-block; border-bottom: 2px solid #000000; border-right: 2px solid #000000; width: 10px;height: 10px; transform: rotate(45deg); transition: all .5s; }
+.mobile-btn-1::before{ content: "";display: inline-block; border-bottom: 2px solid #231f20; border-right: 2px solid #231f20; width: 10px;height: 10px; transform: rotate(45deg); transition: all .5s; }
 .up::before{ transform: rotate(225deg); border-bottom: 2px solid #ddd; border-right: 2px solid #ddd;}
 
 .m-info-wrap{display: flex;justify-content: space-around ; border: 1px solid #ddd;}
@@ -189,7 +220,7 @@ padding-bottom: 5px;}
 
 /* footer */
 
-footer{ width: 100%;  margin-top: 5% !important;   font-size: .8em; line-height: 1.5em; font-weight: 300; background-color: #000000; color: #efefef;}
+footer{ width: 100%;  margin-top: 5% !important;   font-size: .8em; line-height: 1.5em; font-weight: 300; background-color: #231f20; color: #efefef;}
 footer a{  font-size: 1em; color: #efefef;}
 .footer-inner{display: flex; padding: 2% 0 4%; }
 .f_logo{ width: 120px; height: auto;}
@@ -202,7 +233,7 @@ footer a{  font-size: 1em; color: #efefef;}
 .f-bottom{ text-align: center;  padding-bottom: 1%;}
 
 @media (max-width:767px){
-  footer{ width: 100%;  margin-top: 10%;   font-size: .8em; line-height: 1.5em; font-weight: 300; border-top: 1px solid #000000;}
+  footer{ width: 100%;  margin-top: 10%;   font-size: .8em; line-height: 1.5em; font-weight: 300; border-top: 1px solid #231f20;}
   footer a{  font-size: 1em;}
   .footer-inner{display: flex; padding: 2% 0 5%; flex-wrap:wrap-reverse;} 
   .f-csinfo, .f-notice{ width: 48% !important; margin:  1% 1% 2% 1%;}
